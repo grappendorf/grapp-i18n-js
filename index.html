@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>grapp-i18n-js web component</title>
+  <script src='lib/webcomponentsjs/webcomponents-lite.min.js'></script>
+  <script src='test/translations.js'></script>
+  <link href="build/grapp-i18n-js.html" rel="import">
+</head>
+
+<body>
+
+  <h1>grapp-i18n-js web component</h1>
+
+  <h2>A web component wrapper for the i18n-js library</h2>
+
+  <p>Uses parts of the <a href="https://github.com/fnando/i18n-js">i18n-js</a>
+    library (file vendor/i18n.js, version 2.1.2) from
+    <a href="https://github.com/fnando">Nando Vieira</a> to perform the
+    translations.</p>
+
+  <p>
+    <a href="test/index.html">Click here to run the tests...</a>
+  </p>
+
+  <p>
+    <a href="README.md">Click here to read the documentation...</a>
+  </p>
+
+  <p>
+    <a href="CHANGELOG.md">Click here to read the changelog...</a>
+  </p>
+
+  <h2>Demo</h2>
+
+  <dom-module id="demo-element">
+    <template>
+      <div>[[i18nNumber(123.12)]]</div>
+      <div>[[i18nNumber(123456.789, 2)]]</div>
+      <div>[[i18nCurrency(1234.567, '€')]]</div>
+      <div>[[i18nBytes(8354749474)]]</div>
+      <div>[[i18nBytes(835474)]]</div>
+      <div>[[i18nPercentage(74)]]</div>
+      <div>[[i18nDate(now)]]</div>
+      <div>[[i18nTime(now)]]</div>
+      <div>[[i18nDateTime(now)]]</div>
+    </template>
+    <script>
+      Polymer({
+        is: 'demo-element',
+        properties: {now: {type: Date, value: new Date()}},
+        behaviors: [I18NBehavior]
+      })
+    </script>
+  </dom-module>
+
+  <template is="dom-bind">
+
+    <p><grapp-i18n-js key="hello_world"></grapp-i18n-js></p>
+
+    <p><demo-element></demo-element></p>
+  </template>
+
+  <script src="//localhost:35729/livereload.js"></script>
+
+</body>

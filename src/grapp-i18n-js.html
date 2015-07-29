@@ -1,0 +1,30 @@
+ <!-- build:process -->
+<!--
+<%= copyright %>
+Element: <%= pkg.name %>
+Version: <%= pkg.version %>
+Description: <%= pkg.description %>
+
+Includes the i18n-js library by Nando Vieira
+-->
+<!-- /build -->
+
+<link href="../lib/polymer/polymer.html" rel="import">
+<!-- build:script inline dist_i18n -->
+<script src="i18n.js"></script>
+<!-- /build -->
+<!-- build:script inline dist_behavior -->
+<script src="grapp-i18n-js-behavior.js"></script>
+<!-- /build -->
+
+<dom-module id="grapp-i18n-js">
+
+  <template>
+    <span>[[i18n(key)]]</span>
+  </template>
+
+  <!-- build:script inline dist_element -->
+  <script src="grapp-i18n-js.js"></script>
+  <!-- /build -->
+
+</dom-module>

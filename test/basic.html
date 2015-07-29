@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>grapp-i18n basic tests</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <script src='../lib/webcomponentsjs/webcomponents-lite.min.js'></script>
+  <script src="../lib/web-component-tester/browser.js"></script>
+  <script src="../lib/coffee-script/extras/coffee-script.js"></script>
+  <script src="translations.js"></script>
+
+  <link href="../build/grapp-i18n-js.html" rel="import">
+</head>
+<body>
+
+  <grapp-i18n-js id="hello" key="hello_world"></grapp-i18n-js>
+
+  <script type="text/coffeescript">
+
+    describe 'grapp-i18n-js', ->
+
+    it 'should display the translated hello world text', ->
+      element = document.querySelector '#hello'
+      expect(element.textContent.trim()).to.equal 'Hello World!'
+
+  </script>
+
+</body>
+</html>
