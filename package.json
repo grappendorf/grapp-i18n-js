@@ -3,9 +3,6 @@
     "type": "git",
     "url": "git://github.com/grappendorf/grapp-i18n-js.git"
   },
-  "dependencies": {
-    "i18n-js": "https://github.com/fnando/i18n-js/archive/v2.1.2.zip"
-  },
   "devDependencies": {
     "bower": "1.4.1",
     "grunt": "0.4.5",
