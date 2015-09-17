@@ -5,4 +5,4 @@ Polymer
   properties:
     key: {type: String}
 
-  behaviors: [I18NBehavior]
+  behaviors: [GrappI18NJsBehavior]

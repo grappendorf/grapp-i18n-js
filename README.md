@@ -13,8 +13,8 @@ The grapp-i18n-js web component is published under the MIT license
 (see the attached LICENSE.txt file).
 
 
-I18NBehavior
-============
+GrappI18NJsBehavior
+===================
 
 Methods
 -------

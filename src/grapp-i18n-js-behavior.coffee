@@ -3,7 +3,7 @@ root = exports ? this
 I18n.defaultLocale = 'en'
 I18n.locale = 'en'
 
-root.I18NBehavior =
+root.GrappI18NJsBehavior =
 
   i18n: (key, format = null) ->
     if format && typeof(format) == 'string'
