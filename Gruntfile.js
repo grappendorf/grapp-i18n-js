@@ -58,12 +58,11 @@ module.exports = function(grunt) {
         dest: 'build/',
         options: {
           scripts: {
-            dist_element: ['build/grapp-i18n-js.js'],
-            dist_behavior: ['build/grapp-i18n-js-behavior.js'],
-            dist_i18n: ['vendor/i18n.js']
+            'grapp-i18n-js': ['build/grapp-i18n-js.js'],
+            'grapp-i18n-js-behavior': ['build/grapp-i18n-js-behavior.js'],
+            'i18n': ['vendor/i18n.js']
           },
           styles: {
-            dist: ['build/*.css']
           },
           data: {
             copyright: grunt.file.read('tmpl/copyright.tmpl')
