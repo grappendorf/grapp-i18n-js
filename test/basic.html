@@ -5,25 +5,29 @@
   <meta charset="UTF-8">
   <title>grapp-i18n basic tests</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-
   <script src='../lib/webcomponentsjs/webcomponents-lite.min.js'></script>
   <script src="../lib/web-component-tester/browser.js"></script>
+  <script src="../lib/test-fixture/test-fixture-mocha.js"></script>
   <script src="../lib/coffee-script/extras/coffee-script.js"></script>
   <script src="translations.js"></script>
-
+  <link rel="import" href="../lib/test-fixture/test-fixture.html">
   <link rel="import" href="../build/grapp-i18n-js.html">
 </head>
 <body>
 
-  <grapp-i18n-js id="hello" key="hello_world"></grapp-i18n-js>
+  <test-fixture id="hello">
+    <template>
+      <grapp-i18n-js id="hello" key="hello_world"></grapp-i18n-js>
+    </template>
+  </test-fixture>
 
   <script type="text/coffeescript">
 
     describe 'grapp-i18n-js', ->
 
-    it 'should display the translated hello world text', ->
-      element = document.querySelector '#hello'
-      expect(element.textContent.trim()).to.equal 'Hello World!'
+      it 'should display the translated hello world text', ->
+        element = fixture 'hello'
+        expect(element.textContent.trim()).to.equal 'Hello World!'
 
   </script>
 
