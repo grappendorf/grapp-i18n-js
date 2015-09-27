@@ -5,6 +5,12 @@ I18n.locale = 'en'
 
 root.Grapp =
   I18NJsBehavior:
+    i18nSetDefaultLocale: (defaultLocale) ->
+      I18n.defaultLocale = defaultLocale
+
+    i18nSetLocale: (locale) ->
+      I18n.locale = locale
+
     i18n: (key, format = null) ->
       if format && typeof(format) == 'string'
         key = format.replace('_', key)
