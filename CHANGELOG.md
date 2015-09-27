@@ -1,3 +1,12 @@
+<a name="0.3.0"></a>
+## 0.3.0 (2015-09-27)
+
+
+#### Bug Fixes
+
+* put behavior in a root namespace ([1c801ac0](http://github.com/grappendorf/grapp-i18n-js/commit/1c801ac00f3f4126b7f89ae27d957d24eadf78b8))
+
+
 <a name="0.2.0"></a>
 ## 0.2.0 (2015-09-17)
 

@@ -1,7 +1,7 @@
 {
   "name": "grapp-i18n-js",
   "description": "A web component wrapper for the i18n-js library",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "main": "grapp-i18n-js.html",
   "license": "MIT",
   "ignore": [
