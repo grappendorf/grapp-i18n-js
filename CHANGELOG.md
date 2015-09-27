@@ -1,3 +1,12 @@
+<a name="0.3.1"></a>
+### 0.3.1 (2015-09-27)
+
+
+#### Features
+
+* add methods for setting the (default) locale ([966c38c6](http://github.com/grappendorf/grapp-i18n-js/commit/966c38c60f0818f2518ead310e68aaea6fb560e3))
+
+
 <a name="0.3.0"></a>
 ## 0.3.0 (2015-09-27)
 
